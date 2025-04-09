@@ -1,0 +1,13 @@
+Input
+Dr. Sarah Miller, MDABC Family Medical Clinic456 Oakwood Blvd, Suite 101Miami, FL 33130Phone: (305) 555-7890Fax: (305) 555-7891Email: sarah.miller@abcclinic.com
+
+Output
+Detected PII:
+Entity: 456, Label: BUILDINGNUM, Score: 0.9906
+Entity: Oakwood Blvd, Label: STREET, Score: 0.9915
+Entity: Miami, Label: ZIPCODE, Score: 0.5670
+Entity: FL 33130, Label: ZIPCODE, Score: 0.8515
+Entity: (305) 555-7890, Label: TELEPHONENUM, Score: 0.9988
+Entity: (305) 555-7891, Label: TELEPHONENUM, Score: 0.9998
+Entity: sarah., Label: EMAIL, Score: 0.5705
+Entity: miller, Label: USERNAME, Score: 0.5687
