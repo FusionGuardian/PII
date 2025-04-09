@@ -1,0 +1,304 @@
+Example 1:
+<p>My child faozzsd379223 (DOB: May/58) will undergo treatment with Dr. faozzsd379223, office at Hill Road. Our ZIP code is 28170-6392. Consult policy M.UE.227995. Contact number: 0070.606.322.6244. Handle transactions with 6225427220412963. Queries? Email: faozzsd379223@outlook.com.</p>
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+Detected PII:
+{'entity_group': 'USERNAME', 'score': 0.9999513, 'word': 'faozzsd379223', 'start': 11, 'end': 25}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.9894405, 'word': 'May/58)', 'start': 31, 'end': 39}
+{'entity_group': 'USERNAME', 'score': 0.99994946, 'word': 'faozzsd379223', 'start': 71, 'end': 85}
+{'entity_group': 'STREET', 'score': 0.99954236, 'word': 'Hill Road', 'start': 96, 'end': 106}
+{'entity_group': 'ZIPCODE', 'score': 0.9996192, 'word': '28170-6392', 'start': 123, 'end': 134}
+{'entity_group': 'TELEPHONENUM', 'score': 0.9999259, 'word': '0070.606.322.6244', 'start': 179, 'end': 197}
+{'entity_group': 'EMAIL', 'score': 0.9999669, 'word': 'faozzsd379223@outlook.com', 'start': 257, 'end': 283}
+
+Example 2:
+Guardians:*BF6* and *BF6* grant permission for their child *BF6*, born on *1960-08-01T00:00:00*, to participate in the Early Intervention Program at *Bicester Bucknell* University. The programme leader, Dr. *BF6* can be contacted at *52siddharta@aol.com* or *536373370485280*.
+Detected PII:
+{'entity_group': 'USERNAME', 'score': 0.9984269, 'word': 'BF6*', 'start': 11, 'end': 15}
+{'entity_group': 'USERNAME', 'score': 0.9970901, 'word': 'BF6*', 'start': 21, 'end': 25}
+{'entity_group': 'USERNAME', 'score': 0.9844929, 'word': 'BF6*', 'start': 60, 'end': 64}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.99738735, 'word': '1960-08-01T00:00:00', 'start': 75, 'end': 94}
+{'entity_group': 'CITY', 'score': 0.9993662, 'word': 'Bicester Bucknell', 'start': 150, 'end': 167}
+{'entity_group': 'USERNAME', 'score': 0.99658144, 'word': 'BF6*', 'start': 208, 'end': 212}
+{'entity_group': 'EMAIL', 'score': 0.99998134, 'word': '52siddharta@aol.com', 'start': 234, 'end': 253}
+
+Example 3:
+We, *bahara.cathers19* and *bahara.cathers19* reside at *358*, *Totnes*, *United Kingdom*, consent for our child *bahara.cathers19*, born on *August/72*, to participate. Please reach us at *18C@gmail.com* or *888517851168245*.
+Detected PII:
+{'entity_group': 'USERNAME', 'score': 0.99996567, 'word': 'bahara.cathers19', 'start': 5, 'end': 21}  
+{'entity_group': 'USERNAME', 'score': 0.9999631, 'word': 'bahara.cathers19', 'start': 28, 'end': 44}  
+{'entity_group': 'BUILDINGNUM', 'score': 0.9992429, 'word': '358', 'start': 57, 'end': 60}
+{'entity_group': 'CITY', 'score': 0.9952712, 'word': 'Totnes', 'start': 64, 'end': 70}
+{'entity_group': 'USERNAME', 'score': 0.9999661, 'word': 'bahara.cathers19', 'start': 114, 'end': 130}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.98231643, 'word': 'August/72', 'start': 142, 'end': 151}   
+{'entity_group': 'EMAIL', 'score': 0.9999365, 'word': '18C@gmail.com', 'start': 190, 'end': 203}      
+
+Example 4:
+Student: Blagojka van der Boog
+DOB: 8th January 1999
+Emergency Contact: Miss Blagojka van der Boog
+Email: v@gmail.com
+Address: 621 Castle 598, United States
+Coordinates: [32.83, -116.5795]
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.99945134, 'word': 'Blagojka', 'start': 8, 'end': 17}
+{'entity_group': 'SURNAME', 'score': 0.997972, 'word': 'van der Boog', 'start': 17, 'end': 30}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.98762167, 'word': '8th January 1999', 'start': 35, 'end': 52}
+{'entity_group': 'GIVENNAME', 'score': 0.9993922, 'word': 'Blagojka', 'start': 76, 'end': 85}
+{'entity_group': 'SURNAME', 'score': 0.9959474, 'word': 'van der Boog', 'start': 85, 'end': 98}
+{'entity_group': 'EMAIL', 'score': 0.99988425, 'word': 'v@gmail.com', 'start': 105, 'end': 117}
+{'entity_group': 'BUILDINGNUM', 'score': 0.9991135, 'word': '621', 'start': 126, 'end': 130}
+
+Example 5:
+Child: Anna-Louise Dolderer
+Date of Birth: 05/07/2010
+Contact Person: Madame Anna-Louise Dolderer
+Contact Email: zmmmpqqu29157@outlook.com
+Address: 7230, Mobile Home 119
+Country: United States
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.9959216, 'word': 'Anna-Louise', 'start': 6, 'end': 18}
+{'entity_group': 'SURNAME', 'score': 0.9976352, 'word': 'Dolderer', 'start': 18, 'end': 27}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.95431334, 'word': '05/07/2010', 'start': 42, 'end': 53}
+{'entity_group': 'GIVENNAME', 'score': 0.99648875, 'word': 'Anna-Louise', 'start': 76, 'end': 88}
+{'entity_group': 'SURNAME', 'score': 0.9951546, 'word': 'Dolderer', 'start': 88, 'end': 97}
+{'entity_group': 'EMAIL', 'score': 0.999973, 'word': 'zmmmpqqu29157@outlook.com', 'start': 112, 'end': 138}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99329805, 'word': '7230', 'start': 147, 'end': 152}
+
+Example 6:
+Student: Matjan Großmann
+DOB: 15th January 2020
+Emergency Contact: Master Matjan Großmann
+Email: matjan.großmann@gmail.com
+Address: 1759 Station 522, United States
+Coordinates: [33.28061, -111.752]
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.9994582, 'word': 'Matjan', 'start': 8, 'end': 15}
+{'entity_group': 'SURNAME', 'score': 0.998466, 'word': 'Großmann', 'start': 15, 'end': 24}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.9809572, 'word': '15th January 2020', 'start': 29, 'end': 47}
+{'entity_group': 'GIVENNAME', 'score': 0.9993874, 'word': 'Matjan', 'start': 73, 'end': 80}
+{'entity_group': 'SURNAME', 'score': 0.99719155, 'word': 'Großmann', 'start': 80, 'end': 89}
+{'entity_group': 'EMAIL', 'score': 0.9999474, 'word': 'matjan.großmann@gmail.com', 'start': 96, 'end': 122}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99915785, 'word': '1759', 'start': 131, 'end': 136}
+
+Example 7:
+Child: Joë al-Tameemi
+Date of Birth: 03/07/1964
+Contact Person: Mr Joë al-Tameemi
+Contact Email: 1964JaR@tutanota.com
+Address: 77, Loft 132
+Country: United States
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.9687844, 'word': 'Joë', 'start': 6, 'end': 10}
+{'entity_group': 'SURNAME', 'score': 0.99899405, 'word': 'al-Tameemi', 'start': 10, 'end': 21}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.99742347, 'word': '03/07/1964', 'start': 36, 'end': 47}
+{'entity_group': 'GIVENNAME', 'score': 0.8441817, 'word': 'Joë', 'start': 66, 'end': 70}
+{'entity_group': 'SURNAME', 'score': 0.9988723, 'word': 'al-Tameemi', 'start': 70, 'end': 81}
+{'entity_group': 'EMAIL', 'score': 0.99996686, 'word': '1964JaR@tutanota.com', 'start': 96, 'end': 117}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99888235, 'word': '77,', 'start': 126, 'end': 130}
+
+Example 8:
+Student: Sohane Sininski
+DOB: 10/28/1935
+Emergency Contact: Sen Sohane Sininski
+Email: SU@protonmail.com
+Address: 738 Box 60, US
+Coordinates: [42.5346, -71.317]
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.99933136, 'word': 'Sohane', 'start': 8, 'end': 15}
+{'entity_group': 'SURNAME', 'score': 0.9993758, 'word': 'Sininski', 'start': 15, 'end': 24}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.9982929, 'word': '10/28/1935', 'start': 29, 'end': 40}
+{'entity_group': 'GIVENNAME', 'score': 0.999235, 'word': 'Sohane', 'start': 63, 'end': 70}
+{'entity_group': 'SURNAME', 'score': 0.99913836, 'word': 'Sininski', 'start': 70, 'end': 79}
+{'entity_group': 'EMAIL', 'score': 0.9999743, 'word': 'SU@protonmail.com', 'start': 86, 'end': 104}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99911743, 'word': '738', 'start': 113, 'end': 117}
+
+Example 9:
+Child: Tharany Balebako
+Date of Birth: 03/19/1949
+Contact Person: Madame Tharany Balebako
+Contact Email: B191949@aol.com
+Address: 9265, Floor 43
+Country: United States
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.99909925, 'word': 'Tharany', 'start': 6, 'end': 14}
+{'entity_group': 'SURNAME', 'score': 0.9992964, 'word': 'Balebako', 'start': 14, 'end': 23}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.99905473, 'word': '03/19/1949', 'start': 38, 'end': 49}
+{'entity_group': 'GIVENNAME', 'score': 0.9987628, 'word': 'Tharany', 'start': 72, 'end': 80}
+{'entity_group': 'SURNAME', 'score': 0.9989901, 'word': 'Balebako', 'start': 80, 'end': 89}
+{'entity_group': 'EMAIL', 'score': 0.9999659, 'word': 'B191949@aol.com', 'start': 104, 'end': 120}
+{'entity_group': 'BUILDINGNUM', 'score': 0.98996377, 'word': '9265', 'start': 129, 'end': 134}
+
+Example 10:
+Child: Cäsar Sciola
+Date of Birth: January/12
+Contact Person: Master Cäsar Sciola
+Contact Email: C@tutanota.com
+Address: 410, Unit 157
+Country: United States
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.999378, 'word': 'Cäsar', 'start': 6, 'end': 12}
+{'entity_group': 'SURNAME', 'score': 0.99906135, 'word': 'Sciola', 'start': 12, 'end': 19}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.97146255, 'word': 'January/12', 'start': 34, 'end': 45}
+{'entity_group': 'GIVENNAME', 'score': 0.9994137, 'word': 'Cäsar', 'start': 68, 'end': 74}
+{'entity_group': 'SURNAME', 'score': 0.99820316, 'word': 'Sciola', 'start': 74, 'end': 81}
+{'entity_group': 'EMAIL', 'score': 0.9997661, 'word': 'C@tutanota.com', 'start': 96, 'end': 111}
+{'entity_group': 'BUILDINGNUM', 'score': 0.9992949, 'word': '410', 'start': 120, 'end': 124}
+
+Example 11:
+Student: Velio Doran
+DOB: 1965-01-12T00:00:00
+Emergency Contact: Mr Velio Doran
+Email: VD@tutanota.com
+Address: 4682 Condo 348, United States
+Coordinates: [39.4, -104.7893]
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.9992684, 'word': 'Velio', 'start': 8, 'end': 14}
+{'entity_group': 'SURNAME', 'score': 0.9858291, 'word': 'Doran', 'start': 14, 'end': 20}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.99396044, 'word': '1965-01-12T00:00:00', 'start': 25, 'end': 45}
+{'entity_group': 'GIVENNAME', 'score': 0.998955, 'word': 'Velio', 'start': 67, 'end': 73}
+{'entity_group': 'SURNAME', 'score': 0.9932931, 'word': 'Doran', 'start': 73, 'end': 79}
+{'entity_group': 'EMAIL', 'score': 0.9999755, 'word': 'VD@tutanota.com', 'start': 86, 'end': 102}
+{'entity_group': 'BUILDINGNUM', 'score': 0.9987757, 'word': '4682', 'start': 111, 'end': 116}
+
+Example 12:
+Student: Fawzy Samatar
+DOB: July 21st, 1998
+Emergency Contact: Mr Fawzy Samatar
+Email: fawzy80@aol.com
+Address: 1852 Farmhouse 366, United States
+Coordinates: [40.0, -84.9]
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.999377, 'word': 'Fawzy', 'start': 8, 'end': 14}
+{'entity_group': 'SURNAME', 'score': 0.9976871, 'word': 'Samatar', 'start': 14, 'end': 22}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.9745702, 'word': 'July 21st, 1998', 'start': 27, 'end': 43}
+{'entity_group': 'GIVENNAME', 'score': 0.9991428, 'word': 'Fawzy', 'start': 65, 'end': 71}
+{'entity_group': 'SURNAME', 'score': 0.99840033, 'word': 'Samatar', 'start': 71, 'end': 79}
+{'entity_group': 'EMAIL', 'score': 0.9999788, 'word': 'fawzy80@aol.com', 'start': 86, 'end': 102}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99905896, 'word': '1852', 'start': 111, 'end': 116}
+
+Example 13:
+Child: Fljoresha Aufranc
+Date of Birth: June 17th, 1996
+Contact Person: Madame Fljoresha Aufranc
+Contact Email: fljoresha@gmail.com
+Address: 27627, Residence 439
+Country: United States
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.99936914, 'word': 'Fljoresha', 'start': 6, 'end': 16}
+{'entity_group': 'SURNAME', 'score': 0.99927014, 'word': 'Aufranc', 'start': 16, 'end': 24}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.97910535, 'word': 'June 17th, 1996', 'start': 39, 'end': 55}
+{'entity_group': 'GIVENNAME', 'score': 0.9992593, 'word': 'Fljoresha', 'start': 78, 'end': 88}
+{'entity_group': 'SURNAME', 'score': 0.9988432, 'word': 'Aufranc', 'start': 88, 'end': 96}
+{'entity_group': 'EMAIL', 'score': 0.999795, 'word': 'fljoresha@gmail.com', 'start': 111, 'end': 131}
+{'entity_group': 'BUILDINGNUM', 'score': 0.98324144, 'word': '27627', 'start': 140, 'end': 146}
+
+Example 14:
+Student: Levon Hueske
+DOB: 29/01/2003
+Emergency Contact: Mister Levon Hueske
+Email: vyxpytuiycwuveef94@aol.com
+Address: 2200 Apt 348, United States
+Coordinates: [34.21429, -117.4]
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.99872625, 'word': 'Levon', 'start': 8, 'end': 14}
+{'entity_group': 'SURNAME', 'score': 0.9988917, 'word': 'Hueske', 'start': 14, 'end': 21}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.99032164, 'word': '29/01/2003', 'start': 26, 'end': 37}
+{'entity_group': 'GIVENNAME', 'score': 0.9987903, 'word': 'Levon', 'start': 63, 'end': 69}
+{'entity_group': 'SURNAME', 'score': 0.9982476, 'word': 'Hueske', 'start': 69, 'end': 76}
+{'entity_group': 'EMAIL', 'score': 0.9999811, 'word': 'vyxpytuiycwuveef94@aol.com', 'start': 83, 'end': 110}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99914074, 'word': '2200', 'start': 119, 'end': 124}
+
+Example 15:
+Child: Vannie Vijaya
+Date of Birth: 1984-10-20T00:00:00
+Contact Person: Mayoress Vannie Vijaya
+Contact Email: rikyoaskffpfjq39@tutanota.com
+Address: 525, Farmhouse 740
+Country: United States
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.9988595, 'word': 'Vannie', 'start': 6, 'end': 13}
+{'entity_group': 'SURNAME', 'score': 0.80634236, 'word': 'Vijaya', 'start': 13, 'end': 20}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.9769746, 'word': '1984-10-20T00:00:00', 'start': 35, 'end': 55}
+{'entity_group': 'GIVENNAME', 'score': 0.99865854, 'word': 'Vannie', 'start': 80, 'end': 87}
+{'entity_group': 'SURNAME', 'score': 0.8261626, 'word': 'Vijaya', 'start': 88, 'end': 94}
+{'entity_group': 'EMAIL', 'score': 0.99998146, 'word': 'rikyoaskffpfjq39@tutanota.com', 'start': 109, 'end': 139}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99943227, 'word': '525', 'start': 148, 'end': 152}
+
+Example 16:
+Student: Nazra Glavaski
+DOB: 10/01/1978
+Emergency Contact: Judge Nazra Glavaski
+Email: 6610N@hotmail.com
+Address: 5807 Lodge 566, US
+Coordinates: [39.185, -121.4]
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.99939686, 'word': 'Nazra', 'start': 8, 'end': 14}
+{'entity_group': 'SURNAME', 'score': 0.99935365, 'word': 'Glavaski', 'start': 14, 'end': 23}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.9923878, 'word': '10/01/1978', 'start': 28, 'end': 39}
+{'entity_group': 'GIVENNAME', 'score': 0.9993016, 'word': 'Nazra', 'start': 64, 'end': 70}
+{'entity_group': 'SURNAME', 'score': 0.99910456, 'word': 'Glavaski', 'start': 70, 'end': 79}
+{'entity_group': 'EMAIL', 'score': 0.9999708, 'word': '6610N@hotmail.com', 'start': 86, 'end': 104}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99884975, 'word': '5807', 'start': 113, 'end': 118}
+
+Example 17:
+Child: Menesa Böser
+Date of Birth: 01/11/1939
+Contact Person: Madame Menesa Böser
+Contact Email: menesa.böser26@protonmail.com
+Address: 19118, Unit 71
+Country: US
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.9991846, 'word': 'Menesa', 'start': 6, 'end': 13}
+{'entity_group': 'SURNAME', 'score': 0.9983935, 'word': 'Böser', 'start': 13, 'end': 19}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.99923235, 'word': '01/11/1939', 'start': 34, 'end': 45}
+{'entity_group': 'GIVENNAME', 'score': 0.9991998, 'word': 'Menesa', 'start': 68, 'end': 75}
+{'entity_group': 'SURNAME', 'score': 0.99752617, 'word': 'Böser', 'start': 75, 'end': 81}
+{'entity_group': 'EMAIL', 'score': 0.9999757, 'word': 'menesa.böser26@protonmail.com', 'start': 96, 'end': 126}
+{'entity_group': 'BUILDINGNUM', 'score': 0.9824244, 'word': '19118', 'start': 135, 'end': 141}
+
+Example 18:
+Child: Beneta Haist
+Date of Birth: 06/01/1995
+Contact Person: Mayoress Beneta Haist
+Contact Email: beneta9@hotmail.com
+Address: 970, Condo 137
+Country: United States
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.9993526, 'word': 'Beneta', 'start': 6, 'end': 13}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.9877427, 'word': '06/01/1995', 'start': 34, 'end': 45}
+{'entity_group': 'GIVENNAME', 'score': 0.99915487, 'word': 'Beneta', 'start': 70, 'end': 77}
+{'entity_group': 'SURNAME', 'score': 0.99753404, 'word': 'Haist', 'start': 77, 'end': 83}
+{'entity_group': 'EMAIL', 'score': 0.9998995, 'word': 'beneta9@hotmail.com', 'start': 98, 'end': 118}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99938464, 'word': '970', 'start': 127, 'end': 131}
+
+Example 19:
+Student: Enrique Liberati
+DOB: 07/08/1963
+Emergency Contact: Mister Enrique Liberati
+Email: tarres@aol.com
+Address: 1000 Section 232, US
+Coordinates: [32.5616, -96.77]
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.9948548, 'word': 'Enrique', 'start': 8, 'end': 16}
+{'entity_group': 'SURNAME', 'score': 0.9952687, 'word': 'Liberati', 'start': 16, 'end': 25}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.99476403, 'word': '07/08/1963', 'start': 30, 'end': 41}
+{'entity_group': 'GIVENNAME', 'score': 0.97629976, 'word': 'Enrique', 'start': 67, 'end': 75}
+{'entity_group': 'SURNAME', 'score': 0.9866171, 'word': 'Liberati', 'start': 75, 'end': 84}
+{'entity_group': 'EMAIL', 'score': 0.99997896, 'word': 'tarres@aol.com', 'start': 91, 'end': 106}
+{'entity_group': 'BUILDINGNUM', 'score': 0.9991979, 'word': '1000', 'start': 115, 'end': 120}
+
+Example 20:
+Student: Siyum Kowalkowski
+DOB: 13/10/2022
+Emergency Contact: Mr Siyum Kowalkowski
+Email: K@gmail.com
+Address: 1 Room 287, US
+Coordinates: [39.126, -84.69057]
+Detected PII:
+{'entity_group': 'GIVENNAME', 'score': 0.99948394, 'word': 'Siyum', 'start': 8, 'end': 14}
+{'entity_group': 'SURNAME', 'score': 0.9989818, 'word': 'Kowalkowski', 'start': 14, 'end': 26}
+{'entity_group': 'DATEOFBIRTH', 'score': 0.87600344, 'word': '13/10/2022', 'start': 31, 'end': 42}
+{'entity_group': 'GIVENNAME', 'score': 0.99942863, 'word': 'Siyum', 'start': 64, 'end': 70}
+{'entity_group': 'SURNAME', 'score': 0.9984644, 'word': 'Kowalkowski', 'start': 70, 'end': 82}
+{'entity_group': 'EMAIL', 'score': 0.99983406, 'word': 'K@gmail.com', 'start': 89, 'end': 101}
+{'entity_group': 'BUILDINGNUM', 'score': 0.99685526, 'word': '1', 'start': 110, 'end': 112}
